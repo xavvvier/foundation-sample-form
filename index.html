@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Review of services</title>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.min.css"></style>
+      <style type="text/css" media="all">
+div.grid-container{
+   max-width: 700px;
+}
+
+.cell > label:first-child{
+   font-weight: bold;
+}
+
+.right{
+   float: right;
+}
+      </style>
+   </head>
+   <body>
+      <form action="http://matt.nscctruro.ca/handler.php" method="post">
+         <div class="grid-container">
+         <h3>Review of services</h3>
+            <div class="grid-x grid-padding-x">
+               <div class="medium-12 cell">
+                  <label>Company
+                     <input type="text" name="name" required placeholder="Company name">
+                  </label>
+               </div>
+               <div class="medium-12 cell">
+                  <label>First Name
+                     <input type="text" name="firstName" required placeholder="First Name">
+                  </label>
+               </div>
+               <div class="medium-12 cell">
+                  <label>Last Name
+                     <input type="text" name="lastName" placeholder="Last Name">
+                  </label>
+               </div>
+               <div class="medium-12 cell">
+                  <label>Address
+                     <input type="text" name="address" placeholder="123 Street, City, Province, Postal Code">
+                  </label>
+               </div>
+               <div class="medium-12 cell">
+                  <label>E-mail
+                     <input type="email" required name="email" placeholder="e-mail">
+                  </label>
+               </div>
+               <div class="medium-12 cell">
+                  <label>Attributes to highlight</label>
+                  <input type="checkbox" value="Prompt" id="experiencePromtp"/>
+                  <label for="experiencePromtp">Prompt</label>
+                  <br>
+                  <input type="checkbox" value="Courteous" id="experienceCourteous"/>
+                  <label for="experienceCourteous">Courteous</label>
+                  <br>
+                  <input type="checkbox" value="Available" id="experienceAvailable"/>
+                  <label for="experienceAvailable">Available</label>
+                  <br>
+                  <input type="checkbox" value="Professional" id="experienceProfessional"/>
+                  <label for="experienceProfessional">Professional</label>
+                  <br>
+                  <input type="checkbox" value="AbleToMeet" id="experienceAbleToMeet"/>
+                  <label for="experienceAbleToMeet">Able to meet</label>
+                  <br>
+                  <input type="checkbox" value="FaceToFace" id="experienceFaceToFace"/>
+                  <label for="experienceFaceToFace">Face to face</label>
+               </div>
+               <div class="medium-12 cell">
+                  <label>How do you rate my work?</label>
+                  <input type="radio" name="work" value="NeedsImprovement" id="workNeedsImprovement"/>
+                  <label for="workNeedsImprovement">Needs Improvement</label>
+                  <br>
+                  <input type="radio" name="work" value="MeetsNeeds" id="workMeetsNeeds"/>
+                  <label for="workMeetsNeeds">Meets Needs</label>
+                  <br>
+                  <input type="radio" name="work" value="avobeAndBeyond" id="workAvobeAndBeyond"/>
+                  <label for="workAvobeAndBeyond">Went above and beyond expectactions</label>
+               </div>
+               <div class="medium-12 cell">
+                  <label>Would you recommend my services?</label>
+                  <input type="radio" name="recommend" value="recommend" id="recommendYes"/>
+                  <label for="recommendYes">Highly recommend</label>
+                  <br>
+                  <input type="radio" name="recommend" value="notSure" id="recommendNotSure"/>
+                  <label for="recommendNotSure">Would recommend</label>
+                  <br>
+                  <input type="radio" name="recommend" value="Yeah" id="recommendYeah"/>
+                  <label for="recommendYeah">Would not recommend</label>
+               </div>
+               <div class="medium-12 cell">
+                  <label>Comments
+                     <textarea rows="5" placeholder="Any additional suggestion"></textarea>
+                  </label>
+               </div>
+               <div class="cell panel clearfix">
+                  <button type="submit" class="button left">Send</button>
+                  <button type="button" class="button secondary right" onclick="javacript:form.reset();">Reset</button>
+               </div>
+            </div>
+         </div>
+      </form>
+   </body>
+</html>
